@@ -1,20 +1,25 @@
 <template name="register">
   {{>layout}}
-    <form>
     <div class="homeheader">
     <h11>Register</h11>
     </div>
-      <div class="registerstuff">
-        <label for="email">Email Address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-        <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-        <label for="code">Confirmation Code</label>
-        <input type="code" class="form-control" id="code" name="code" placeholder="Confirmation Code">
-      <div class="form-group3"> 
-      </div>
-      <button type="submit" id="register">Register</button>
-       <button type="button" id="sendcode">Send Verification Code</button>
-      </div>
-  </form>
+      <div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button>login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+
+
 </template>

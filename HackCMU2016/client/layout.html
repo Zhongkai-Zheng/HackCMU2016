@@ -1,0 +1,24 @@
+<template name="layout">
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+			{{#if currentUser}}
+			<div class="navbar-header">
+      			<a class="navbar-brand" href="{{pathFor route='home'}}">DinexSwap</a>
+    		</div>
+    		<ul class="nav navbar-nav">
+    			
+      		<li><a href="#" class="logout">Logout</a></li> 
+    		</ul>
+			{{else}}
+			<div class="navbar-header">
+      			<a class="navbar-brand" href="{{pathFor route='home'}}">DinexSwap</a>
+    		</div>
+    		<ul class="nav navbar-nav">
+    			
+      	</ul>
+				<!--<a href="{{pathFor route='login'}}">Login</a>
+				<a href="{{pathFor route='register'}}">Register</a>-->
+			{{/if}}
+		</div>
+	</nav>
+</template>
